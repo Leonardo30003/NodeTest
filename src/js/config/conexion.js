@@ -1,2 +1,6 @@
 var mongoose = require("mongoose")
-var conexion = mongoose.connection("mongodb://localhost:27017/")
+var connection = mongoose.connect("mongodb://127.0.0.1:27017/")
+mongoose.connection.on('open',(ref)=>{
+    console.log("conectado a mongoDb");
+});
+module.exports=connection;
