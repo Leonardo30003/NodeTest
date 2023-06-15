@@ -1,8 +1,8 @@
 var mongoose = require('mongoose')
 
-schema=mongoose.Schema;
+Schema=mongoose.Schema;
 
-var personasSchema=new mongoose.schema({
+var personasSchema = new mongoose.Schema({
     nombres:String,
     apellidos:String,
     edad:Number,
@@ -11,5 +11,5 @@ var personasSchema=new mongoose.schema({
     descripcion:String,
     telefono:String
 })
-var persona=mongoose.model('persona',personasSchema);
-module.exports=persona;
+var personas=mongoose.model('personas',personasSchema);
+module.exports=personas;
