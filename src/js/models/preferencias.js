@@ -1,13 +1,14 @@
-var mongoose = require('mongoose')
-schema=mongoose.Schema;
+var mongoose= require('mongoose');
 
-var preferenciasSchema=new mongoose.schema({
-    hobby:String,
-    generoPreferido:String,
-    edadMinima:Number,
-    edadMaxima:Number,
-    ciudades:String,
-    busco:String
-})
+Schema=mongoose.Schema;
+
+var preferenciasSchema= new mongoose.Schema({
+   hobbie:String,
+   generoPreferido:String,
+   edadminima:Number,
+   edadmaxima:Number,
+   ciudades: String,
+   busco:String
+});
 var preferencias=mongoose.model('preferencias',preferenciasSchema);
 module.exports=preferencias;

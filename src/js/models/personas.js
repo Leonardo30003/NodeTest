@@ -1,8 +1,7 @@
-var mongoose = require('mongoose')
-
+var mongoose=require('mongoose');
 Schema=mongoose.Schema;
 
-var personasSchema = new mongoose.Schema({
+var personasSchema= new mongoose.Schema({
     nombres:String,
     apellidos:String,
     edad:Number,
@@ -10,6 +9,6 @@ var personasSchema = new mongoose.Schema({
     estadoCivil:String,
     descripcion:String,
     telefono:String
-})
-var personas=mongoose.model('personas',personasSchema);
-module.exports=personas;
+});
+var persona=mongoose.model('personas',personasSchema);
+module.exports=persona;
