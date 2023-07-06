@@ -8,4 +8,4 @@ const express=require('express'),
 router.use("/personas", personas);
 router.use("/preferencias", preferencias);
 router.use("/encuentros", encuentros);
-module.exports=router;
+module.exports=router

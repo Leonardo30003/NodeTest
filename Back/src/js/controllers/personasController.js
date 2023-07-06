@@ -20,7 +20,7 @@ router.post('/crearPersona',(req,response)=>{
       .catch(function (err) {
         console.log(err);
         response.status(500).json("Ocurrio un error al guardar")
-      });;
+      });
 
 });
 module.exports=router;
@@ -46,7 +46,7 @@ router.post('/editarPersona', (req, response) => {
       console.log(err);
       response.status(500).json("Ocurrio un error al guardar")
     });
-;});
+});
 module.exports = router;
 router.post('/editarPersona', (req, response) => {
   var body = req.body;
@@ -70,9 +70,9 @@ router.post('/editarPersona', (req, response) => {
       console.log(err);
       response.status(500).json("Ocurrio un error al guardar")
     });
-;});
+});
 module.exports = router;
-router.post('/editarPersona', (req, response) => {
+router.post('/eliminarPersona', (req, response) => {
   var body = req.body;
   Personas.deleteOne({
     _id:body.id //que campo voy actualizar
